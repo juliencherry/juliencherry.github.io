@@ -1,0 +1,33 @@
+#map {
+	height: 10rem;
+	border-radius: 0.25rem;
+
+  	* {
+    	margin: 0;
+  	}
+}
+
+.leaflet-bar {
+	border: none !important;
+}
+
+.leaflet-control-attribution {
+	border-radius: 0.5rem;
+	margin: 0.25rem !important;
+}
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+	margin: 0.5rem 0 0 0.5rem !important;
+
+	color: $white !important;
+	background-color: $accent-color !important;
+
+	border: none !important;
+	border-radius: 1rem !important;
+}
+
+.leaflet-disabled {
+	border: 1px $accent-color solid !important;
+	color: $accent-color !important;
+	background-color: transparent !important;
+}

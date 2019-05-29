@@ -1,0 +1,19 @@
+@import "_colors";
+$accent-color: black;
+
+@import "_theme";
+
+* {
+	background-color: black !important;
+	color: white !important;
+
+	&::selection, &> *::selection {
+		background-color: white !important;
+		color: black !important;
+	}
+}
+
+img {
+	border: 1px solid white;
+	padding: 16px;
+}

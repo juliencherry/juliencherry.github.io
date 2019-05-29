@@ -1,0 +1,407 @@
+@import "_variables";
+
+* {
+	// all: unset;
+	// display: block;
+
+	background-color: transparent;
+	box-sizing: border-box;
+}
+
+base, head, link, meta, style, title {
+	display: none;
+}
+
+html, body {
+	background-color: $white;
+	display: block;
+	margin: 0 !important;
+
+	color: $black;
+	font-family: $serif;
+	font-size: $point-size;
+}
+
+p, li {
+	line-height: 140%;
+}
+
+div {
+	display: block;
+}
+
+// Hyperlinks
+
+h1, h2, h3, h4, h5, h6 {
+	color: $accent-color;
+	font-style: italic;
+	font-variant-ligatures: historical-ligatures;
+}
+
+// Margining
+
+p {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, figure, iframe, img, table, aside {
+	margin: $margin-size 0 $margin-size 0;
+
+	&:first-child {
+		margin: 0 0 $margin-size 0;
+	}
+
+	&:last-child {
+		margin: $margin-size 0 0 0;
+	}
+}
+
+p + p {
+	margin-top: $margin-size;
+}
+
+ul {
+	margin: 0;
+}
+
+li {
+	margin: $margin-size / 2 0;
+}
+
+// Used on the photography page, needs to be fixed more elegantly
+figcaption {
+	font-size: 80%;
+	position: relative;
+	margin-top: $margin-size / 2;
+	margin-bottom: $margin-size;
+	bottom: $margin-size;
+}
+
+/* p {
+	margin: ($margin-size / 2) 0 ($margin-size / 2) 0;
+
+	&:first-child {
+		margin: 0 0 ($margin-size) 0;
+	}
+
+	&:last-child {
+		margin: ($margin-size / 2) 0 0 0;
+	}
+} */
+
+////////////////////
+// Block (Sectioning?) Elements //
+////////////////////
+
+address, article, aside, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+// todo - specific styles?
+
+/////////////////////
+// Inline Elements //
+/////////////////////
+
+a, abbr, b, bdi, bdo, cite, del, dfn, em, i, ins, kbd, mark, q, s, span, strong, sup, sub, time, u, var {
+	display: inline;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:link {
+	color: $accent-color;
+}
+
+a:visited {
+	color: $accent-color;
+}
+
+a:hover {
+	color: lighten($accent-color, 10%);
+}
+
+a:active {
+	color: darken($accent-color, 10%);
+}
+
+abbr {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+bdi {
+	// todo
+}
+
+bdo {
+	// todo
+}
+
+cite, em, i {
+	font-style: italic;
+}
+
+del, s {
+	text-decoration: line-through;
+}
+
+dfn, time {
+	font-family: $sans-serif;
+}
+
+ins, u {
+	text-decoration: underline;
+}
+
+kbd {
+	font-family: $keyboard;
+}
+
+$highlight: #FF0;
+mark {
+	background-color: $highlight;
+}
+
+q {
+	&:before {
+		// content: open-quote;
+	}
+
+	&:after {
+		// content: close-quote;
+	}
+}
+
+span {
+	// that’s it
+}
+
+sub {
+	font-size: smaller;
+	// font-weight: bolder;
+	vertical-align: sub;
+}
+
+sup {
+	font-size: smaller;
+	// font-weight: bolder;
+	vertical-align: super;
+}
+
+var {
+	font-family: $monospace;
+}
+
+// <--tags to do::-->
+// address
+// area, audio
+// br, canvas, data
+// details, dialog
+// embed
+// figcaption, figure
+// iframe, img
+// main, map, menu, menuitem
+// noscript, object
+// p
+// param, picture
+// script
+// shadow, small, source
+// summary
+// template, track
+// video
+// wbr
+
+p {
+	word-break: break-word;
+}
+
+iframe {
+	border: none;
+}
+
+iframe, img {
+	max-width: 100%;
+}
+
+// form elements: button, datalist, fieldset, form, input, label, legend, meter, optgroup, option, output, progress, select, textarea
+button {
+	border: 1px solid $black;
+	border-radius: 0.25em;
+	padding: 1em;
+
+	&:hover {
+		background-color: $black;
+		color: $white;
+	}
+
+	&:active {
+		background-color: $accent-color;
+		color: $white;
+	}
+}
+
+
+// ruby annotations: rp, rt, ruby
+// sectioning:
+// lists: ol, li, ul, dd, dl, dt
+// Lists
+
+ul, ol {
+	li::marker {
+		font-family: $sans-serif;
+	}
+}
+
+dt {
+	font-weight: 600;
+}
+
+// Code Samples
+
+samp {
+	background-color: $black;
+	color: $white;
+	font-family: $monospace;
+	font-size: $point-size - 4px;
+	padding: 2px 0 2px 0;
+
+}
+
+blockquote, pre code {
+	box-shadow: -5px 0 0 $white, -15px 0 0 $black;
+	margin-left: 15px;
+	position: relative;
+	left: -15px;
+}
+
+code {
+	font-family: $monospace;
+}
+
+pre {
+	font-family: $serif;
+	white-space: pre;
+}
+
+// Tables
+
+caption {
+
+}
+
+table {
+	display: table;
+	border-collapse: collapse;
+	border-spacing: 2px;
+    border-color: gray;
+}
+
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+    border-color: inherit;
+}
+
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+    border-color: inherit;
+}
+
+tfoot {
+	display: table-row-group;
+}
+
+th, td {
+	display: table-cell;
+	padding: 5px;
+	vertical-align: inherit;
+	border: 1pt black solid;
+}
+
+th {
+	font-family: $sans-serif;
+}
+
+tr {
+	display: table-row;
+}
+
+tr:hover td {
+	background-color: $accent-color;
+	color: $white;
+}
+
+col {
+
+}
+
+colgroup {
+
+}
+
+// Miscellaneous
+
+hr {
+    display: block;
+	border: 0;
+	border-bottom: 1px solid #000;
+    line-height: 0;
+    margin: 10px 0 20px;
+    border-width: 1px;
+	border-color: $black;
+	text-align: center;
+	height: 0;
+	margin: $point-size 0;
+
+	&::before {
+		content: "⁂";
+		display: block;
+		width: 1em;
+		height: 1em;
+    	margin: 10px auto 0 auto;
+		background-color: $white;
+		font-size: inherit; // not working
+	}
+}
+
+// text selection
+
+::selection {
+	background-color: $black;
+	color: $white;
+}
+
+a {
+	&::selection {
+		background-color: $accent-color;
+		color: $white;
+		text-decoration-color: $white;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	&::selection, &> *::selection {
+		background-color: $accent-color;
+		color: $white;
+	}
+}
+
+hr {
+	&::selection {
+		border-color: $white;
+	}
+}
+
+mark {
+	&::selection {
+		color: $highlight;
+	}
+}

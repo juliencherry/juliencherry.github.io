@@ -1,0 +1,13 @@
+$accent-color: #000 !default;
+
+$bg: white;
+$black: #333 !default;
+$white: #FEFEFE !default;
+$grey: #4C4C4C;
+
+$anchor-red: adjust-color(#C33, $lightness: 5%);
+
+$red:    adjust-color($anchor-red,               $saturation: 10%, $lightness: 5%);
+$green:  adjust-color($anchor-red, $hue: 120deg, $saturation: -20%);
+$blue:   adjust-color($anchor-red, $hue: 210deg, $saturation: -10%);
+$purple: adjust-color($anchor-red, $hue: -90deg, $saturation: -15%);

@@ -1,0 +1,18 @@
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	transition: $args;
+}
+
+@mixin text-shadow($args...) {
+	-webkit-text-shadow: $args;
+	text-shadow: $args;
+}
+
+@mixin user-select($args...) {
+    -khtml-user-select: $args;
+    -moz-user-select: $args;
+    -ms-user-select: $args;
+   	-webkit-touch-callout: $args;
+	-webkit-user-select: $args;
+    user-select: $args;
+}
