@@ -32,15 +32,5 @@
 			"link": "/projects/lambda-iota-engma",
 			"description": "A concept website for the Northeastern linguistics club."
 		},
-		{
-			"name": "Driving in the USA",
-			"link": "/projects/driving-charts",
-			"description": "A data visualization."
-		},
-		{
-			"name": "Playing Cards",
-			"link": "/projects/playing-cards",
-			"description": "A playing card concept for my Art Foundations course (Google Chrome only)."
-		},
 	]
 }
