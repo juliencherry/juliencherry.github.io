@@ -9,6 +9,7 @@ Julien Cherry’s personal website.
 ## ⭐️ Priority
 
 * automatically preprocess HTML and CSS
+* fix HTTPS Keybase proof
 * transfer DNS to and host website with Zeit; disable GitHub Pages
 
 ## Bug Fixes
