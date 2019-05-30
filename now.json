@@ -1,3 +1,10 @@
 {
-	"version": 2
+	"version": 2,
+	"builds": [
+		{ "src": ".well-known/keybase.txt", "use": "@now/static" },
+		{ "src": "index.html", "use": "@now/static" },
+		{ "src": "projects", "use": "@now/static" },
+		{ "src": "photography", "use": "@now/static" },
+		{ "src": "generate", "use": "@now/static" },
+	]
 }
