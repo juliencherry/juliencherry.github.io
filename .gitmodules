@@ -1,0 +1,6 @@
+[submodule "projects/chimerical-colors"]
+	path = projects/chimerical-colors
+	url = git@github.com:juliencherry/chimerical-colors.git
+[submodule "projects/lambda-iota-engma"]
+	path = projects/lambda-iota-engma
+	url = git@github.com:juliencherry/lambda-iota-engma.git
