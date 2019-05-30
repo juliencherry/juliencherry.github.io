@@ -1,10 +1,6 @@
-<?php
-    global $title;
-    $title = "Projects";
-    require_once $_SERVER["DOCUMENT_ROOT"] . "/header.php";
-?>
+{{> partials/header}}
         <main>
-            <h1><?php echo $title; ?></h1>
+            <h1>{{title}}</h1>
             <p>Miscellaneous stuff of mine that somehow ended up online.</p>
 			<ul>
 				<li><a href="https://na-und-goethe-2017.itch.io/na-und">Na Und?</a> - An experimental game of choice made during the <a href="https://www.goethe.de/en/uun/ver/arg/ort/bst.html">Goethe-Institut Boston</a>’s iteration of the 48-hour <a href="https://www.goethe.de/en/uun/ver/arg.html">Art Games</a> game jam.</li>
@@ -17,6 +13,4 @@
 				<li><a href="/projects/playing-cards">Playing Cards</a> - A playing card concept for my Art Foundations course (Google Chrome only). </li>
 			</ul>
         </main>
-<?php
-    require_once $_SERVER["DOCUMENT_ROOT"] . "/footer.php";
-?>
+{{> partials/footer}}
