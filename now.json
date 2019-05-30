@@ -6,6 +6,6 @@
 		{ "src": "projects", "use": "@now/static" },
 		{ "src": "photography", "use": "@now/static" },
 		{ "src": "generate", "use": "@now/static" },
-		{ "src": "robots.txt", "use": "@now/static" },
+		{ "src": "robots.txt", "use": "@now/static" } 
 	]
 }
