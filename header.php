@@ -26,7 +26,7 @@
             <nav>
                 <ul>
                     <li><a href="/">Julien Cherry</a></li><!--prevents dastardly inline-block spacing
-                    --><li><a href="/blog">Blog</a></li><!--
+                    --><li><a href="https://blog.juliencherry.net/">Blog</a></li><!--
                     --><li><a href="/photography">Photography</a></li><!--
                     --><li><a href="/projects">Projects</a></li>
                 </ul>

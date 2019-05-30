@@ -1,6 +1,0 @@
-{
-    "require": {
-        "tumblr/tumblr": "^0.2.0",
-		"abraham/twitteroauth": "*"
-    }
-}
