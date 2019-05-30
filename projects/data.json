@@ -1,4 +1,46 @@
 {
 	"css": "projects",
 	"title": "Projects",
+	"projects": [
+		{
+			"name": "Na Und?",
+			"link": "https://na-und-goethe-2017.itch.io/na-und",
+			"description": "An experimental game of choice made during the <a href=\"https://www.goethe.de/en/uun/ver/arg/ort/bst.html\">Goethe-Institut Boston</a>’s iteration of the 48-hour <a href=\"https://www.goethe.de/en/uun/ver/arg.html\">Art Games</a> game jam."
+		},
+		{
+			"name": "Generate",
+			"link": "/generate",
+			"description": "An intersection of computer science and art."
+		},
+		{
+			"name": "Chimerical Colors",
+			"link": "/projects/chimerical",
+			"description": "An exploration in colors that don’t exist! Stare at the X until the screen changes color. Explanation included in my <a href=\"/article/?id=146059450673\">Colors are Complicated blog post</a>."
+		},
+		{
+			"name": "The Mechanical Orchestra",
+			"link": "https://www.youtube.com/watch?v=G1UExKuc1hQ",
+			"description": "Floppy drives that play music, controlled using an Arduino UNO."
+		},
+		{
+			"name": "What’s Up?",
+			"link": "https://github.com/juliencherry/whats-up",
+			"description": "An in-progress tool I’m designing to help manage reminders and todos."
+		},
+		{
+			"name": "Lambda Iota Engma",
+			"link": "/projects/lambda-iota-engma",
+			"description": "A concept website for the Northeastern linguistics club."
+		},
+		{
+			"name": "Driving in the USA",
+			"link": "/projects/driving-charts",
+			"description": "A data visualization."
+		},
+		{
+			"name": "Playing Cards",
+			"link": "/projects/playing-cards",
+			"description": "A playing card concept for my Art Foundations course (Google Chrome only)."
+		},
+	]
 }
