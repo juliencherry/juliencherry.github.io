@@ -3,14 +3,14 @@
 $root: "https://cdn.rawgit.com/juliencherry/linux-libertine/master/";
 
 @font-face {
-    font-family: "Biolinum";
-    src: url($root + "LinBiolinum_R.woff");
+	font-family: "Biolinum";
+	src: url($root + "LinBiolinum_R.woff");
 }
 
 @font-face {
-    font-family: "Biolinum";
+	font-family: "Biolinum";
 	font-style: italic;
-    src: url($root + "LinBiolinum_RI.woff");
+	src: url($root + "LinBiolinum_RI.woff");
 }
 
 // Linux Biolinum Keyboard
@@ -21,48 +21,48 @@ $root: "https://cdn.rawgit.com/juliencherry/linux-libertine/master/";
 }
 
 @font-face {
-    font-family: "Biolinum";
+	font-family: "Biolinum";
 	font-weight: bold;
-    src: url($root + "LinBiolinum_RB.woff");
+	src: url($root + "LinBiolinum_RB.woff");
 }
 
 // Linux Libertine
 
 @font-face {
-    font-family: "Libertine";
-    src: url($root + "LinLibertine_R.woff");
+	font-family: "Libertine";
+	src: url($root + "LinLibertine_R.woff");
 }
 
 @font-face {
-    font-family: "Libertine";
+	font-family: "Libertine";
 	font-weight: bold;
-    src: url($root + "LinLibertine_RB.woff");
+	src: url($root + "LinLibertine_RB.woff");
 }
 
 @font-face {
-    font-family: "Libertine";
+	font-family: "Libertine";
 	font-style: italic;
-    src: url($root + "LinLibertine_RI.woff");
+	src: url($root + "LinLibertine_RI.woff");
 }
 
 @font-face {
-    font-family: "Libertine";
+	font-family: "Libertine";
 	font-style: italic;
 	font-weight: bold;
-    src: url($root + "LinLibertine_RBI.woff");
+	src: url($root + "LinLibertine_RBI.woff");
 }
 
 @font-face {
-    font-family: "Libertine";
+	font-family: "Libertine";
 	font-weight: 600;
-    src: url($root + "LinLibertine_RZ.woff");
+	src: url($root + "LinLibertine_RZ.woff");
 }
 
 @font-face {
-    font-family: "Libertine";
+	font-family: "Libertine";
 	font-style: italic;
 	font-weight: 600;
-    src: url($root + "LinLibertine_RZI.woff");
+	src: url($root + "LinLibertine_RZI.woff");
 }
 
 // Linux Libertine Display
@@ -82,6 +82,6 @@ $root: "https://cdn.rawgit.com/juliencherry/linux-libertine/master/";
 // Linux Libertine Mono
 
 @font-face {
-    font-family: "Libertine Mono";
-    src: url($root + "LinLibertine_M.woff");
+	font-family: "Libertine Mono";
+	src: url($root + "LinLibertine_M.woff");
 }
