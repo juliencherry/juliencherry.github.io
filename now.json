@@ -8,7 +8,7 @@
 		{ "src": "generate", "use": "@now/static" },
 		{ "src": "robots.txt", "use": "@now/static" },
 		{ "src": "css/*.css", "use": "@now/static" },
-		{ "src": "external/*.js", "use": "@now/static" }
+		{ "src": "external/*.js", "use": "@now/static" },
 		{ "src": "js/*.js", "use": "@now/static" }
 	]
 }
