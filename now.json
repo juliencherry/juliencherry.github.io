@@ -3,9 +3,9 @@
 	"builds": [
 		{ "src": ".well-known/keybase.txt", "use": "@now/static" },
 		{ "src": "index.html", "use": "@now/static" },
-		{ "src": "projects", "use": "@now/static" },
-		{ "src": "photography", "use": "@now/static" },
-		{ "src": "generate", "use": "@now/static" },
+		{ "src": "projects/*", "use": "@now/static" },
+		{ "src": "photography/*", "use": "@now/static" },
+		{ "src": "generate/*", "use": "@now/static" },
 		{ "src": "robots.txt", "use": "@now/static" },
 		{ "src": "css/*.css", "use": "@now/static" },
 		{ "src": "external/*.js", "use": "@now/static" },
