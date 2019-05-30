@@ -6,6 +6,10 @@ Julien Cherry’s personal website.
 
 # Todo
 
+## ⭐️ Priority
+
+* automatically preprocess HTML and CSS
+
 ## Bug Fixes
 
 * fix blog page
