@@ -1,0 +1,16 @@
+{
+	"version": 2,
+	"github": {
+		"enabled": false
+	},
+	"builds": [
+		{ "src": ".well-known/keybase.txt", "use": "@now/static" },
+		{ "src": "./**", "use": "@now/static" }
+	],
+	"routes": [
+		{ "src": "(.*[^//])",
+		  "status": 301,
+		  "headers": { "Location": "$1/" }
+		}
+	]
+}
