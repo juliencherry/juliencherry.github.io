@@ -8,7 +8,10 @@ Julien Cherry’s personal website.
 
 ## ⭐️ Priority
 
-* automatically preprocess HTML and CSS
+* enable `www` redirects for `juliencherry.net` domain
+* improve deployment process
+	* automatically preprocess HTML and CSS
+	* simplify submoduled projects
 
 ## Bug Fixes
 
@@ -22,6 +25,7 @@ Julien Cherry’s personal website.
 
 ## Improvements
 
+* combine alternate domain, HTTPS, `www` and trailing slash redirects
 * load Libertine and Biolinum fonts, considering performance
 * replace Font Awesome lock icon with custom one
 * improve Leaflet styles
