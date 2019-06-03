@@ -4,13 +4,20 @@ Julien Cherry’s personal website.
 
 ---
 
+## Building
+
+1. Install dependencies:
+	* [Mustache](https://mustache.github.io/)
+	* [Sass](https://sass-lang.com/install)
+2. Run `./.build`
+
 ## Todo
 
 ### ⭐️ Priority
 
 * enable `www` redirects for `juliencherry.net` domain
 * improve deployment process
-	* automatically preprocess HTML and CSS
+	* automatically run build script
 	* simplify submoduled projects
 
 ### Bug Fixes
