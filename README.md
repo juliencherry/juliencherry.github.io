@@ -16,9 +16,7 @@ Julien Cherry’s personal website.
 ### ⭐️ Priority
 
 * enable `www` redirects for `juliencherry.net` domain
-* improve deployment process
-	* automatically run build script
-	* simplify submoduled projects
+* include submoduled projects in deployment
 
 ### Bug Fixes
 
