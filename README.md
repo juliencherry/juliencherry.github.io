@@ -9,7 +9,7 @@ Julien Cherry’s personal website.
 1. Install dependencies:
 	* [Mustache](https://mustache.github.io/)
 	* [Sass](https://sass-lang.com/install)
-2. Run `./.build`
+2. Run `./build.sh`
 
 ## Todo
 
