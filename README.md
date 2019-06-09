@@ -13,11 +13,6 @@ Julien Cherry’s personal website.
 
 ## Todo
 
-### ⭐️ Priority
-
-* enable `www` redirects for `juliencherry.net` domain
-* include submoduled projects in deployment
-
 ### Bug Fixes
 
 * fix blog page
