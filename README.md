@@ -1,6 +1,6 @@
 # juliencherry.net <img alt="" src="https://raw.githubusercontent.com/juliencherry/personal-website/master/favicon.ico" width="22px" height="22px">
 
-Julien Cherry’s personal website.
+Julien Cherry’s personal website. Deployment is handled by the repo [juliencherry/juliencherry.net](https://github.com/juliencherry/juliencherry.net).
 
 ---
 
