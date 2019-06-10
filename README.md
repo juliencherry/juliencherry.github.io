@@ -11,7 +11,7 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 	* [Sass](https://sass-lang.com/install)
 2. Run `./build.sh`
 
-## Todo
+## To Do
 
 ### Bug Fixes
 
@@ -25,7 +25,6 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 
 ### Improvements
 
-* combine alternate domain, HTTPS, `www` and trailing slash redirects
 * load Libertine and Biolinum fonts, considering performance
 * replace Font Awesome lock icon with custom one
 * improve Leaflet styles
