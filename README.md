@@ -1,4 +1,4 @@
-# juliencherry.net
+# juliencherry.net <img alt="" src="https://raw.githubusercontent.com/juliencherry/personal-website/master/favicon.ico" width="22px" height="22px">
 
 Julien Cherry’s personal website.
 
