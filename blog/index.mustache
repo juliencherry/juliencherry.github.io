@@ -1,0 +1,11 @@
+{{> partials/header}}
+<main>
+	<h1>{{title}}</h1>
+	<p>My blog’s undergoing some spring cleaning, so here’s a good subset of posts to browse:</p>
+	<ul>
+		{{#posts}}
+		<li><a href="/post/{{id}}">{{title}}</a></li>
+		{{/posts}}
+	</ul>
+</main>
+{{> partials/footer}}

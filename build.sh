@@ -21,3 +21,11 @@ find . -name "mustache.json" -exec bash -c 'preprocess_html_file "$0"' {} \;
 
 sass scss:$OUT_DIR/css
 echo "Generated CSS files"
+
+wget https://blog.juliencherry.now.sh -r
+cd blog.juliencherry.now.sh
+mkdir ../post; mv post/* $_
+mkdir ../img; mv img/* $_
+mv css/post.css ../css/post.css
+cd ..
+echo "Copied over blog posts"
