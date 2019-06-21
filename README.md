@@ -15,12 +15,12 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 
 ### Bug Fixes
 
-- [ ] fix margins of certain nested elements (e.g. `figcaption img`)
-- [ ] make (header and) footer text wrap if page width becomes too small
+- [ ] Fix margins of certain nested elements (e.g. `figcaption img`)
+- [ ] Make (header and) footer text wrap if page width becomes too small
 
 ### Improvements
 
-- [ ] host photography without 500px
-- [ ] load Libertine and Biolinum fonts, considering performance
-- [ ] replace Font Awesome lock icon with custom one
-- [ ] improve Leaflet styles
+- [ ] Host photography without 500px
+- [ ] Load Libertine and Biolinum fonts, considering performance
+- [ ] Replace Font Awesome lock icon with custom one
+- [ ] Improve Leaflet styles
