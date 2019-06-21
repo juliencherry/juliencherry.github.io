@@ -24,3 +24,12 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 - [ ] Load Libertine and Biolinum fonts, considering performance
 - [ ] Replace Font Awesome lock icon with custom one
 - [ ] Improve Leaflet styles
+
+#### Blog
+
+- [ ] Chronologically preview posts on `/blog`
+- [ ] Create system for post permalinks
+- [ ] Import post preprocessing logic from [juliencherry/blog](https://github.com/juliencherry/blog) (private repo)
+- [ ] Include post dates as metadata
+- [ ] Load correct post title in address bar
+- [ ] Use website CSS style for posts
