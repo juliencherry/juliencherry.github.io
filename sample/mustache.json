@@ -1,0 +1,66 @@
+{
+	"css": "hello",
+	"title": "Sample",
+	"states_and_provinces": [
+		{
+			"name": "Connecticut",
+			"abbreviation": "CT",
+			"capital": "Hartford",
+		},
+		{
+			"name": "Maine",
+			"abbreviation": "ME",
+			"capital": "Augusta",
+		},
+		{
+			"name": "Massachusetts",
+			"abbreviation": "MA",
+			"capital": "Boston",
+		},
+		{
+			"name": "New Brunswick",
+			"abbreviation": "NB",
+			"capital": "Fredericton",
+		},
+		{
+			"name": "New Hampshire",
+			"abbreviation": "NH",
+			"capital": "Concord",
+		},
+		{
+			"name": "New York",
+			"abbreviation": "NY",
+			"capital": "Albany",
+		},
+		{
+			"name": "Newfoundland and Labrador",
+			"abbreviation": "NL",
+			"capital": "St. John’s",
+		},
+		{
+			"name": "Nova Scotia",
+			"abbreviation": "NS",
+			"capital": "Halifax",
+		},
+		{
+			"name": "Prince Edward Island",
+			"abbreviation": "PE",
+			"capital": "Charlottetown",
+		},
+		{
+			"name": "Quebec",
+			"abbreviation": "QC",
+			"capital": "Quebec City",
+		},
+		{
+			"name": "Rhode Island",
+			"abbreviation": "RI",
+			"capital": "Providence",
+		},
+		{
+			"name": "Vermont",
+			"abbreviation": "VT",
+			"capital": "Montpelier",
+		},
+	]
+}
