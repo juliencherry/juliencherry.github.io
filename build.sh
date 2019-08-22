@@ -24,6 +24,11 @@ echo "Generated CSS files"
 
 wget https://blog.juliencherry.now.sh -r
 cd blog.juliencherry.now.sh
+
+cd post
+find . -name "*" -mindepth 1 -exec bash -c 'mv $0 $0.html && mkdir $0 && mv $0.html $0/index.html' {} \;
+cd ..
+
 mkdir ../post; mv post/* $_
 mkdir ../img; mv img/* $_
 mv css/post.css ../css/post.css
