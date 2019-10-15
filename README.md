@@ -31,6 +31,7 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 
 ### Other
 
+- [ ] Add flag to build script to not download blog
 - [ ] Host photography without 500px
 - [ ] Load Libertine and Biolinum fonts, considering performance
 - [ ] Replace Font Awesome lock icon with custom one
