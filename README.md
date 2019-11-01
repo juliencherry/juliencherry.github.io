@@ -22,6 +22,12 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 - [ ] Load correct post title in address bar
 - [ ] Use website CSS style for posts
 
+### Build Script
+
+- [ ] Add flag to not download blog
+- [ ] Output more useful usage message
+- [ ] Test argument behavior
+
 ### Style
 
 - [ ] Fix margins of certain nested elements (e.g. `figcaption img`)
@@ -31,7 +37,6 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 
 ### Other
 
-- [ ] Add flag to build script to not download blog
 - [ ] Host photography without 500px
 - [ ] Load Libertine and Biolinum fonts, considering performance
 - [ ] Replace Font Awesome lock icon with custom one

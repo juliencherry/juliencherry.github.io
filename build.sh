@@ -1,9 +1,27 @@
 #!/usr/bin/env sh
 
-if [ $# -eq 0 ]; then
-	export OUT_DIR=.
-else
-	export OUT_DIR=$1
+export OUT_DIR=.
+num_flags=0
+while getopts ":o:" opt; do
+	case $opt in
+		o)
+			num_flags=1
+			OUT_DIR=$OPTARG
+			;;
+		\?)
+			echo "Invalid flag: -$OPTARG" >&2
+			exit 1
+			;;
+		:)
+			echo "The -$OPTARG flag requires an argument" >&2
+			exit 1
+			;;
+	esac
+done
+
+if [ $# -ne $(( num_flags * 2 )) ]; then
+	echo "The number of arguments must match the number of flags" >&2
+	exit 1
 fi
 
 preprocess_html_file() {
