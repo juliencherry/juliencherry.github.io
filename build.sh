@@ -59,8 +59,11 @@ cd post
 find . -name "*" -mindepth 1 -exec bash -c 'mv $0 $0.html && mkdir $0 && mv $0.html $0/index.html' {} \;
 cd ..
 
-mkdir ../post; mv post/* $_
-mkdir ../img; mv img/* $_
-mv css/post.css ../css/post.css
+mv css/post.css ../css
+mv img ..
+mv post ..
+
 cd ..
+rm -r blog.juliencherry.now.sh
+
 echo "Copied over blog posts"
