@@ -1,12 +1,18 @@
 #!/usr/bin/env sh
 
 export OUT_DIR=.
-num_flags=0
-while getopts ":o:" opt; do
+args_needed=0
+skip_blog_posts=false
+
+while getopts ":o:s" opt; do
 	case $opt in
 		o)
-			num_flags=1
+			args_needed=$(( args_needed + 2 ))
 			OUT_DIR=$OPTARG
+			;;
+		s)
+			args_needed=$(( args_needed + 1 ))
+			skip_blog_posts=true
 			;;
 		\?)
 			echo "Invalid flag: -$OPTARG" >&2
@@ -19,7 +25,7 @@ while getopts ":o:" opt; do
 	esac
 done
 
-if [ $# -ne $(( num_flags * 2 )) ]; then
+if [ $# -ne $args_needed ]; then
 	echo "The number of arguments must match the number of flags" >&2
 	exit 1
 fi
@@ -39,6 +45,10 @@ find . -name "mustache.json" -exec bash -c 'preprocess_html_file "$0"' {} \;
 
 sass scss:$OUT_DIR/css
 echo "Generated CSS files"
+
+if [ "$skip_blog_posts" = true ]; then
+	exit 0
+fi
 
 wget https://blog.juliencherry.now.sh -r
 cd blog.juliencherry.now.sh
