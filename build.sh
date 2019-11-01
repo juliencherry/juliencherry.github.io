@@ -50,6 +50,8 @@ if [ "$skip_blog_posts" = true ]; then
 	exit 0
 fi
 
+cd $OUT_DIR
+
 wget https://blog.juliencherry.now.sh -r
 cd blog.juliencherry.now.sh
 
