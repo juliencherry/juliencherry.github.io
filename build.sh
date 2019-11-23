@@ -64,9 +64,8 @@ cd $OUT_DIR
 wget https://blog.juliencherry.now.sh -r
 cd blog.juliencherry.now.sh
 
-cd post
-find . -name "*" -mindepth 1 -exec bash -c 'mv $0 $0.html && mkdir $0 && mv $0.html $0/index.html' {} \;
-cd ..
+find post -iname "*.md" -type f -exec sh -c 'mkdir ${0%.md}; pandoc -s --metadata pagetitle="Post" -c "/css/post.css" "${0}" -o "${0%.md}/index.html"' {} \;
+rm post/*.md
 
 mv css/post.css ../css
 mv img ..

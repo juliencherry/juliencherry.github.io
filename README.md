@@ -8,6 +8,7 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 
 1. Install dependencies:
 	* [Mustache](https://mustache.github.io/)
+	* [Pandoc](https://pandoc.org/installing.html)
 	* [Sass](https://sass-lang.com/install)
 2. Run `./build.sh`
 
@@ -17,7 +18,6 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 
 - [ ] Chronologically preview posts on `/blog`
 - [ ] Create system for post permalinks
-- [ ] Import post preprocessing logic from [juliencherry/blog](https://github.com/juliencherry/blog) (private repo)
 - [ ] Include post dates as metadata
 - [ ] Load correct post title in address bar
 - [ ] Use website CSS style for posts
