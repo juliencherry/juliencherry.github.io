@@ -55,6 +55,7 @@ sass scss:$OUT_DIR/css
 echo "Generated CSS files"
 
 if [ "$skip_blog_posts" = true ]; then
+	echo "Skipping downloading blog posts"
 	exit 0
 fi
 
