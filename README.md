@@ -25,7 +25,6 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 ### Build Script
 
 - [ ] Consider argument edge cases
-- [ ] Output more useful usage message
 - [ ] Test argument behavior
 
 ### Style

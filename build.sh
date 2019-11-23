@@ -4,8 +4,16 @@ export OUT_DIR=.
 args_needed=0
 skip_blog_posts=false
 
-while getopts ":o:s" opt; do
+while getopts ":o:sh" opt; do
 	case $opt in
+		h)
+			echo "./build [-hs] [-o directory]"
+			echo ""
+			echo "	-h: print help message"
+			echo "	-o: use specified output directory"
+			echo "	-s: skip downloading blog posts"
+			exit 0
+			;;
 		o)
 			args_needed=$(( args_needed + 2 ))
 			OUT_DIR=$OPTARG
