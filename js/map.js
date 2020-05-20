@@ -27,5 +27,5 @@ var imagery = new L.TileLayer(url, {
     zoomOffset: -1,
 });
 
-map.setView(new L.LatLng(42.3390559, -71.0897654), 13);
+map.setView(new L.LatLng(40.7080556, -73.9141667), 12);
 map.addLayer(imagery);
