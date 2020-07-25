@@ -3,6 +3,10 @@
 	"title": "Blog",
 	"posts": [
 		{
+			"title": "Cultivating Inputs",
+			"id": "cultivating-inputs",
+		},
+		{
 			"title": "home",
 			"id": "185192765978",
 		},
