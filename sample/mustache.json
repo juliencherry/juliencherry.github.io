@@ -5,62 +5,62 @@
 		{
 			"name": "Connecticut",
 			"abbreviation": "CT",
-			"capital": "Hartford",
+			"capital": "Hartford"
 		},
 		{
 			"name": "Maine",
 			"abbreviation": "ME",
-			"capital": "Augusta",
+			"capital": "Augusta"
 		},
 		{
 			"name": "Massachusetts",
 			"abbreviation": "MA",
-			"capital": "Boston",
+			"capital": "Boston"
 		},
 		{
 			"name": "New Brunswick",
 			"abbreviation": "NB",
-			"capital": "Fredericton",
+			"capital": "Fredericton"
 		},
 		{
 			"name": "New Hampshire",
 			"abbreviation": "NH",
-			"capital": "Concord",
+			"capital": "Concord"
 		},
 		{
 			"name": "New York",
 			"abbreviation": "NY",
-			"capital": "Albany",
+			"capital": "Albany"
 		},
 		{
 			"name": "Newfoundland and Labrador",
 			"abbreviation": "NL",
-			"capital": "St. John’s",
+			"capital": "St. John’s"
 		},
 		{
 			"name": "Nova Scotia",
 			"abbreviation": "NS",
-			"capital": "Halifax",
+			"capital": "Halifax"
 		},
 		{
 			"name": "Prince Edward Island",
 			"abbreviation": "PE",
-			"capital": "Charlottetown",
+			"capital": "Charlottetown"
 		},
 		{
 			"name": "Quebec",
 			"abbreviation": "QC",
-			"capital": "Quebec City",
+			"capital": "Quebec City"
 		},
 		{
 			"name": "Rhode Island",
 			"abbreviation": "RI",
-			"capital": "Providence",
+			"capital": "Providence"
 		},
 		{
 			"name": "Vermont",
 			"abbreviation": "VT",
-			"capital": "Montpelier",
-		},
+			"capital": "Montpelier"
+		}
 	]
 }

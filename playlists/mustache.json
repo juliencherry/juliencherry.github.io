@@ -5,12 +5,12 @@
 		{
 			"name": "Herbst",
 			"description": "The word <i>Herbst</i> is the German word for “autumn”. I created this playlist while living in Munich to capture a nostalgic serenity of the season.",
-			"embed": "<iframe width=\"100%\" height=\"450\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/280736745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/juliencherry\" title=\"Julien Cherry\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Julien Cherry</a> · <a href=\"https://soundcloud.com/juliencherry/sets/herbst\" title=\"Herbst\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Herbst</a></div>",
+			"embed": "<iframe width=\"100%\" height=\"450\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/280736745&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true\"></iframe><div style=\"font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;\"><a href=\"https://soundcloud.com/juliencherry\" title=\"Julien Cherry\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Julien Cherry</a> · <a href=\"https://soundcloud.com/juliencherry/sets/herbst\" title=\"Herbst\" target=\"_blank\" style=\"color: #cccccc; text-decoration: none;\">Herbst</a></div>"
 		},
 		{
 			"name": "Glimmer",
 			"description": "This is a playlist of what I like to call “upbeat dreamscapes”. To me, these songs feel both fun and ethereal.",
-			"embed": "<iframe src=\"https://open.spotify.com/embed/playlist/5tIJY7ILPmXrxsFcUwhc1t\" width=\"300\" height=\"380\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
-		},
+			"embed": "<iframe src=\"https://open.spotify.com/embed/playlist/5tIJY7ILPmXrxsFcUwhc1t\" width=\"300\" height=\"380\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>"
+		}
 	]
 }
