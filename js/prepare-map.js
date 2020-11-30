@@ -1,3 +1,5 @@
+'use strict'
+
 var map = L.map('map', {
 	attributionControl: false,
 	boxZoom: false,
