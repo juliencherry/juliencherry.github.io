@@ -1,87 +1,52 @@
-// Linux Biolinum
-
-$root: "https://cdn.rawgit.com/juliencherry/linux-libertine/master/";
+// Libertinus Serif
 
 @font-face {
-	font-family: "Biolinum";
-	src: url($root + "LinBiolinum_R.woff");
+	font-family: "Libertinus";
+	src: url("/fonts/LibertinusSerif-Regular.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "Biolinum";
+	font-family: "Libertinus";
 	font-style: italic;
-	src: url($root + "LinBiolinum_RI.woff");
-}
-
-// Linux Biolinum Keyboard
-
-@font-face {
-	font-family: "Biolinum Keyboard";
-	src: url($root + "LinBiolinum_K.woff");
+	src: url("/fonts/LibertinusSerif-Italic.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "Biolinum";
-	font-weight: bold;
-	src: url($root + "LinBiolinum_RB.woff");
-}
-
-// Linux Libertine
-
-@font-face {
-	font-family: "Libertine";
-	src: url($root + "LinLibertine_R.woff");
-}
-
-@font-face {
-	font-family: "Libertine";
-	font-weight: bold;
-	src: url($root + "LinLibertine_RB.woff");
-}
-
-@font-face {
-	font-family: "Libertine";
-	font-style: italic;
-	src: url($root + "LinLibertine_RI.woff");
-}
-
-@font-face {
-	font-family: "Libertine";
-	font-style: italic;
-	font-weight: bold;
-	src: url($root + "LinLibertine_RBI.woff");
-}
-
-@font-face {
-	font-family: "Libertine";
+	font-family: "Libertinus";
 	font-weight: 600;
-	src: url($root + "LinLibertine_RZ.woff");
+	src: url("/fonts/LibertinusSerif-Semibold.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "Libertine";
+	font-family: "Libertinus";
 	font-style: italic;
 	font-weight: 600;
-	src: url($root + "LinLibertine_RZI.woff");
+	src: url("/fonts/LibertinusSerif-SemiboldItalic.woff2") format("woff2");
 }
 
-// Linux Libertine Display
-
 @font-face {
-	font-family: "Libertine Display";
-	src: url($root + "LinLibertine_DR.woff");
+	font-family: "Libertinus";
+	font-weight: bold;
+	src: url("/fonts/LibertinusSerif-Bold.woff2") format("woff2");
 }
 
-// Linux Libertine Italic
+// League Spartan
 
 @font-face {
-	font-family: "Libertine Italic";
-	src: url($root + "LinLibertine_I.woff");
+	font-family: "League Spartan";
+	src: url("/fonts/LeagueSpartanVariable.woff2") format("woff2");
 }
 
-// Linux Libertine Mono
+// Libertinus Mono
 
 @font-face {
-	font-family: "Libertine Mono";
-	src: url($root + "LinLibertine_M.woff");
+	font-family: "Libertinus Mono";
+	src: url("/fonts/LibertinusMono-Regular.woff2") format("woff2");
+}
+
+// Libertinus Keyboard
+
+@font-face {
+	font-family: "Libertinus Keyboard";
+	src: url("/fonts/LibertinusKeyboard-Regular.woff2") format("woff2");
 }

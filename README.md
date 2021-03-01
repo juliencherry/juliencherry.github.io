@@ -1,4 +1,4 @@
-# juliencherry.net <img alt="" src="https://raw.githubusercontent.com/juliencherry/personal-website/master/favicon.ico" width="22px" height="22px">
+# juliencherry.net
 
 Julien Cherry’s personal website. Deployment is handled by the repo [juliencherry/juliencherry.net](https://github.com/juliencherry/juliencherry.net).
 
@@ -37,6 +37,5 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 ### Other
 
 - [ ] Host photography without 500px
-- [ ] Load Libertine and Biolinum fonts, considering performance
 - [ ] Replace Font Awesome lock icon with custom one
 - [ ] Improve Leaflet styles
