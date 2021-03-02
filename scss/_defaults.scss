@@ -133,8 +133,7 @@ a:active {
 }
 
 abbr {
-	text-decoration: underline;
-	text-decoration-style: dotted;
+	font-variant: all-small-caps;
 }
 
 b, strong {
@@ -375,6 +374,11 @@ hr {
 		background-color: $white;
 		font-size: inherit; // not working
 	}
+}
+
+[title] {
+	text-decoration: underline;
+	text-decoration-style: dotted;
 }
 
 // text selection
