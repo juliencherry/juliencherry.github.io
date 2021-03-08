@@ -61,8 +61,8 @@ fi
 
 cd $OUT_DIR
 
-wget https://blog.juliencherry.now.sh -r
-cd blog.juliencherry.now.sh
+wget -r -np -nc https://blog-juliencherry.vercel.app/
+cd blog-juliencherry.vercel.app
 
 find post -iname "*.md" -type f -exec sh -c 'mkdir ${0%.md}; pandoc -s --metadata pagetitle="Post" -c "/css/post.css" "${0}" -o "${0%.md}/index.html"' {} \;
 rm post/*.md
@@ -72,6 +72,6 @@ mv img ..
 mv post ..
 
 cd ..
-rm -r blog.juliencherry.now.sh
+rm -r blog-juliencherry.vercel.app
 
 echo "Copied over blog posts"
