@@ -1,0 +1,70 @@
+{{> partials/header}}
+<main>
+	<h1>{{Title}}</h1>
+
+	<p>Would you like a free sample? Our samples are 100% organic and <em>loaded</em> with H<sub>2</sub>O<sup>1</sup> and <i>Lactobacillus</i> probiotics for gut health<sup>2</sup>!</p>
+	<hr>
+	<ol>
+		<li>Scientifically proven to effectively hydrate the body.</li>
+		<li>This claim is <strong>not</strong> supported by the <abbr title="Food and Drug Administration">FDA</abbr>.</li>
+	</ol>
+
+	<h2>Greetings from the gorgeous Atlantic Northeast</h2>
+
+	<figure>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Peggys_Cove_Lighthouse%2C_NS.jpg/1280px-Peggys_Cove_Lighthouse%2C_NS.jpg" alt="Lighthouse on a rocky coast">
+		<figcaption>Peggy’s Cove, Nova Scotia • Photo by <a href="https://commons.wikimedia.org/wiki/User:Shawn_M._Kent">Shawn M. Kent</a></figcaption>
+	</figure>
+
+	<p>Our region has many fine states and provinces:</p>
+	<table>
+		<tr>
+			<th>State/Province</th>
+			<th>Abbreviation</th>
+			<th>Capital City</th>
+		</tr>
+		{{#StatesAndProvinces}}
+		<tr>
+			<td>{{Name}}</td>
+			<td>{{Abbreviation}}</td>
+			<td>{{Capital}}</td>
+		</tr>
+		{{/StatesAndProvinces}}
+	</table>
+
+	<h2>In <i>Nature</i>, nonetheless!</h2>
+
+	<p>Ted Chiang describes an intriguing device in his short story <cite><a href="https://www.nature.com/articles/436150a">What’s expected of us</a></cite>:</p>
+	<blockquote>By now you’ve probably seen a Predictor; millions of them have been sold by the time you’re reading this. For those who haven’t seen one, it’s a small device, like a remote for opening your car door. Its only features are a button and a big green LED. The light flashes if you press the button. Specifically, the light flashes one second before you press the button.</blockquote>
+	<p>He emphasizes soon after, <q>No matter what you do, the light always precedes the button press. <mark>There’s no way to fool a Predictor</mark></q>.</p>
+	<br>
+	<button>I’m not a Predictor, I’m just a regular button</button>
+
+	<h3>Reading List</h3>
+
+	<ul>
+		<li><s><i>What’s expected of us</i></s>
+		<li><i>La biblioteca de Babel</i></li>
+		<li><i>The Man Who Came Early</i></li>
+	</ul>
+
+	<h2>Dear Tech Support</h2>
+
+	<p>I’ve been having some trouble with my <abbr title="Cascading Style Sheets">CSS</abbr>. When I click this <a href="http://duck.com">HTTP link</a>, I get the following error: <samp>Hey, kiddo. You need to install a web browser ;)</samp> Can you help me?</p>
+	<p>Solution: type in <kbd>the following text</kbd> and then input the variable <var>x = 5</var>. Then add the following:</p>
+	<pre>
+		<code>
+* {
+	all: unset;
+}
+		</code>
+	</pre>
+	<p>That should solve your problem!</p>
+
+	<h2>Really Long Lines: How Do They Do?</h2>
+
+	<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</p>
+	<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</p>
+	<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</p>
+</main>
+{{> partials/footer}}

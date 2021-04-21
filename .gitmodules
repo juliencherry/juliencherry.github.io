@@ -1,0 +1,9 @@
+[submodule "resources/submodules/blog"]
+	path = resources/submodules/blog
+	url = git@github.com:juliencherry/blog.git
+[submodule "resources/submodules/chimerical-colors"]
+	path = resources/submodules/chimerical-colors
+	url = git@github.com:juliencherry/chimerical-colors.git
+[submodule "resources/submodules/lambda-iota-engma"]
+	path = resources/submodules/lambda-iota-engma
+	url = git@github.com:juliencherry/lambda-iota-engma.git

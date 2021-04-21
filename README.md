@@ -1,16 +1,16 @@
 # juliencherry.net
 
-Julien Cherry’s personal website. Deployment is handled by the repo [juliencherry/juliencherry.net](https://github.com/juliencherry/juliencherry.net).
+Julien Cherry’s personal website.
 
 ---
 
-## Building
+## Prerequisites
 
-1. Install dependencies:
-	* [Mustache](https://mustache.github.io/)
-	* [Pandoc](https://pandoc.org/installing.html)
-	* [Sass](https://sass-lang.com/install)
-2. Run `./build.sh`
+* [Golang](https://golang.org/doc/install)
+
+## Running
+
+1. `go run main.go`
 
 ## To Do
 
@@ -20,12 +20,6 @@ Julien Cherry’s personal website. Deployment is handled by the repo [julienche
 - [ ] Create system for post permalinks
 - [ ] Include post dates as metadata
 - [ ] Load correct post title in address bar
-- [ ] Use website CSS style for posts
-
-### Build Script
-
-- [ ] Consider argument edge cases
-- [ ] Test argument behavior
 
 ### Style
 

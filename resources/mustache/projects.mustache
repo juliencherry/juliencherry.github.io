@@ -1,0 +1,11 @@
+{{> partials/header}}
+<main>
+	<h1>{{Title}}</h1>
+	<p>Miscellaneous stuff of mine that somehow ended up online.</p>
+	<ul>
+		{{#Projects}}
+			<li><a href="{{Link}}">{{Name}}</a> - {{{Description}}}
+		{{/Projects}}
+	</ul>
+</main>
+{{> partials/footer}}
