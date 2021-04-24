@@ -26,6 +26,7 @@ func (s Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	router.Handle("/projects/chimerical-colors/", http.StripPrefix("/projects/chimerical-colors/", http.FileServer(http.Dir(filepath.Join(s.ResourcesDir, "submodules", "chimerical-colors")))))
 	router.Handle("/projects/lambda-iota-engma/", http.StripPrefix("/projects/lambda-iota-engma/", http.FileServer(http.Dir(filepath.Join(s.ResourcesDir, "submodules", "lambda-iota-engma")))))
 
+	router.Handle("/.well-known/", http.StripPrefix("/.well-known/", http.FileServer(http.Dir(filepath.Join(s.ResourcesDir, ".well-known")))))
 	router.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir(filepath.Join(s.ResourcesDir, "css")))))
 	router.Handle("/fonts/", http.StripPrefix("/fonts/", http.FileServer(http.Dir(filepath.Join(s.ResourcesDir, "fonts")))))
 	router.Handle("/images/", http.StripPrefix("/images/", http.FileServer(http.Dir(filepath.Join(s.ResourcesDir, "images")))))

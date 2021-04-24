@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/juliencherry
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://juliencherry.net
+  * I am juliencherry (https://keybase.io/juliencherry) on keybase.
+  * I have a public key with fingerprint D781 7A5A 439C 0055 A1C6  8661 081D D735 A549 F18E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101968e7190bc1307b3b5fc7348ee77285fcdee12d5e530a1aaa7fbd2834afe00ba0a",
+      "fingerprint": "d7817a5a439c0055a1c68661081dd735a549f18e",
+      "host": "keybase.io",
+      "key_id": "081dd735a549f18e",
+      "kid": "0101968e7190bc1307b3b5fc7348ee77285fcdee12d5e530a1aaa7fbd2834afe00ba0a",
+      "uid": "b6db09295588f3de5f8702e48f31af00",
+      "username": "juliencherry"
+    },
+    "merkle_root": {
+      "ctime": 1539528801,
+      "hash_meta": "2550bd7aa5634426cc7329bc2a39b0f6eff8ecdcd224c70aa653bc765455e815",
+      "seqno": 3793240
+    },
+    "revoke": {
+      "sig_ids": [
+        "ba88e93d3f34f685b578e6887d72b4cebc301621971f496094bfc2dfd236798a0f"
+      ]
+    },
+    "service": {
+      "hostname": "juliencherry.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1539528814,
+  "expire_in": 157680000,
+  "prev": "a51b377ca5a19ec10eebd5fe6ee930074370ed3c53b4cc0ec904765ddbc7609a",
+  "seqno": 48,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMK8AnicrZNtaBxFGMcv0SQ0sWClYFFM6gaxaqgzOzM7s4dSoSUWm57aIgptOebl
+2dx6ud1kd++aa4zSmqpgQWK/WNCiCC2RWv2gxWgRrVKQ+lYbWl8IEaVqi6JCFKkR
+nI2KoH50vyzP7P/5P//57czbSy8qdLYM9Fx+1a53ZlXLiWP31wtb3ronGnNUbJpO
+ccypwuILhgykWbkaGqfoIIyw7wng2EdKY4K4IooFmhMqADh3hS0MAHYNA0aQxFJK
+HijjCkJlAAgpiaTT5wRhNAjJcBJGmbU1XGAumaTE1wgxJrH2hOdhJLAxnDDJqB9g
+AbaxEqd5hw2nZAqrw9iu2aL8R7x/6//n3PVFO+UZhXzXZ0yIgBhggeDIBWoLLAOE
+cmEKSSRrYNX31odCiHQFkqTpjPc5NUiqQ1BO4jjLAesszGWYEZ+5QiBsNynTSrkG
+mbTdLmNIGS4l8wilrqdtaNdX2pXEVyjwIAgEaKON61LNkZQeI0pzj1HGQGBms6Qw
+EsVOkXCfuBTZBAk04irkw9Nw0KJLneIWR0khwCeGBIQGnmCKcQGeENxwV1ENShOE
+PRf7HAfU95BPVaBdExiXeNwXEgXOtvF8WNII9aJ5/q/+g8HqCDKbajiJs1jHQ/Zr
+JcuG02LOJmsO5/LtoMp/GpVVGBl7WmxHA5I0jCPLyir/gQ3TPgdGh8MEymGuYNwT
+yD75HGhYS8mwIpxre8ywDxojAGVYAB7YTSPEKeEIDNGWHtUagfYRtRSNyWEiX/7N
+kQqbUw5aT0svklk9AWf82BtbLy60dBba21rza1ToXHLpX5frzULHr+1XPFTZM/H5
+6dHZ6l463Xjm8VtHNkavdezAT7zY+LSaHVm7/OuVL+2aefnb+d0dheeKzX522dVn
++75ZH89NNtrmZuY++OKzFZWd1zzm7B/5pOu6OzaVjretXFV/90P3yWUD7NC5a7vX
+PN0c0+fHbz53W2H3qtv36fp3vdMbt3X9eHDznq4zpQ2/lH5ofrxz0jl1Yd9M7/yJ
+I1PPvze10HL91tJTH82OlL7sXtd78pYXTqVnDk0dbv954f2bpi/5atnYs680LpAb
+eg7sP3AfHTj6+qba2Wa2/tXzO9bRdGlrqbvn+NH+WsuGnx5dG94Jp/dOtt410H/4
+kQfXyIdv7J64csXC9s3LTz4wMXr3/G9Lvv8diSSBeA==
+=0Y+5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/juliencherry
+
+==================================================================
