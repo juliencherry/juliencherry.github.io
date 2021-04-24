@@ -35,5 +35,8 @@ func (s Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	router.Handle("/favicon.ico", FileHandler(filepath.Join(s.ResourcesDir, "favicon.ico")))
 	router.Handle("/robots.txt", FileHandler(filepath.Join(s.ResourcesDir, "robots.txt")))
 
+	router.Handle("/github", RedirectHandler("https://github.com/juliencherry"))
+	router.Handle("/linkedin", RedirectHandler("https://www.linkedin.com/in/juliencherry/"))
+
 	router.ServeHTTP(w, r)
 }
