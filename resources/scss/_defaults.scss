@@ -283,10 +283,8 @@ samp {
 }
 
 blockquote, pre code {
-	box-shadow: -5px 0 0 $white, -15px 0 0 $black;
-	margin-left: 15px;
-	position: relative;
-	left: -15px;
+	box-shadow: -10px 0 0 $white, -20px 0 0 $grey;
+	margin-left: 40px;
 }
 
 code {
@@ -360,11 +358,11 @@ colgroup {
 hr {
 	display: block;
 	border: 0;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid $grey;
 	line-height: 0;
 	margin: 10px 0 20px;
 	border-width: 1px;
-	border-color: $black;
+	border-color: $grey;
 	text-align: center;
 	height: 0;
 	margin: $point-size 0;
@@ -376,6 +374,7 @@ hr {
 		height: 1em;
 		margin: 10px auto 0 auto;
 		background-color: $white;
+		color: $grey;
 		font-size: inherit; // not working
 	}
 }
@@ -405,6 +404,15 @@ h1, h2, h3, h4, h5, h6 {
 		background-color: $accent-color;
 		color: $white;
 	}
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	color: $grey;
+	font-size: 1rem;
 }
 
 hr {
