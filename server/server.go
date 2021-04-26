@@ -14,6 +14,7 @@ func (s Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	router.Handle("/", s.PageHandler("index", ""))
 	router.Handle("/colophon", s.PageHandler("colophon", ""))
+	router.Handle("/ethos", s.PageHandler("ethos", ""))
 	router.Handle("/generate", s.PageHandler("generate", ""))
 	router.Handle("/neurodiversity", s.PageHandler("neurodiversity", ""))
 	router.Handle("/photography", s.PageHandler("photography", ""))

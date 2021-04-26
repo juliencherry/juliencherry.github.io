@@ -21,7 +21,7 @@ footer {
 	}
 }
 
-header {
+body > header {
 	background-color: $accent-color;
 	color: $white;
 	display: inline-block;
@@ -71,7 +71,7 @@ main {
 }
 
 @media (min-width: 612px) {
-	header {
+	body > header {
 		height: 100%;
 		width: 20%;
 
@@ -101,7 +101,7 @@ main {
 }
 
 @media (max-width: 611px) {
-	header {
+	body > header {
 		height: auto;
 		position: relative;
 		width: 100%;
