@@ -15,7 +15,6 @@ type PageData struct {
 	CSS                string
 	Title              string
 	Date               string
-	Location           string
 	Photos             []Photo
 	Playlists          []Playlist
 	Posts              []Post
