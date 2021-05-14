@@ -21,7 +21,7 @@ func (c Compiler) Compile(baseDir string) error {
 	outDir := filepath.Join(baseDir, "css")
 
 	dirEntries, err := os.ReadDir(srcDir)
-	if (err != nil) {
+	if err != nil {
 		return err
 	}
 

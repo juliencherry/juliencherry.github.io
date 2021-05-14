@@ -16,10 +16,8 @@ Julien Cherry’s personal website.
 
 ### Blog
 
-- [ ] Chronologically preview posts on `/blog`
 - [ ] Create system for post permalinks
-- [ ] Include post dates as metadata
-- [ ] Load correct post title in address bar
+- [ ] Load all posts chronologically on `/blog`
 
 ### Style
 

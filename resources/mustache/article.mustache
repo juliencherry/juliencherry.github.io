@@ -1,5 +1,11 @@
 {{> partials/header}}
 <main>
-	{{{HTML}}}
+	{{#HeroImage}}<header style="background-image: url('/img/{{HeroImage}}')">{{/HeroImage}}
+		<h1>{{Title}}</h1>
+		<h2><time>{{{Date}}}</time>{{#Location}} • {{Location}}{{/Location}}</h2>
+	{{#HeroImage}}</header>{{/HeroImage}}
+	{{#HeroImage}}<section>{{/HeroImage}}
+		{{{HTML}}}
+	{{#HeroImage}}</section>{{/HeroImage}}
 </main>
 {{> partials/footer}}

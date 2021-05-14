@@ -58,26 +58,24 @@ type StatesAndProvinces struct {
 	Capital      string
 }
 
-func (s Server) PageHandler(name string, htmlContent string) http.HandlerFunc {
+func (s Server) PageHandler(name string) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method != http.MethodGet {
 			http.NotFound(w, r)
 			return
 		}
 
-		pageData := &PageData{HTML: htmlContent, CSS: "blog", Title: "Article"}
-		if pageData.HTML == "" {
-			jsonData, err := ioutil.ReadFile(filepath.Join(s.ResourcesDir, "json", fmt.Sprint(name, ".json")))
-			if err != nil {
-				http.Error(w, err.Error(), http.StatusInternalServerError)
-				return
-			}
+		jsonData, err := ioutil.ReadFile(filepath.Join(s.ResourcesDir, "json", fmt.Sprint(name, ".json")))
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
 
-			err = json.Unmarshal(jsonData, pageData)
-			if err != nil {
-				http.Error(w, err.Error(), http.StatusInternalServerError)
-				return
-			}
+		pageData := &PageData{}
+		err = json.Unmarshal(jsonData, pageData)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
 		}
 
 		htmlData, err := mustache.RenderFile(filepath.Join(s.ResourcesDir, "mustache", fmt.Sprint(name, ".mustache")), pageData, nil)

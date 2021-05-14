@@ -12,18 +12,18 @@ type Server struct {
 func (s Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	router := http.NewServeMux()
 
-	router.Handle("/", s.PageHandler("index", ""))
-	router.Handle("/colophon", s.PageHandler("colophon", ""))
-	router.Handle("/ethos", s.PageHandler("ethos", ""))
-	router.Handle("/generate", s.PageHandler("generate", ""))
-	router.Handle("/neurodiversity", s.PageHandler("neurodiversity", ""))
-	router.Handle("/photography", s.PageHandler("photography", ""))
-	router.Handle("/playlists", s.PageHandler("playlists", ""))
+	router.Handle("/", s.PageHandler("index"))
+	router.Handle("/colophon", s.PageHandler("colophon"))
+	router.Handle("/ethos", s.PageHandler("ethos"))
+	router.Handle("/generate", s.PageHandler("generate"))
+	router.Handle("/neurodiversity", s.PageHandler("neurodiversity"))
+	router.Handle("/photography", s.PageHandler("photography"))
+	router.Handle("/playlists", s.PageHandler("playlists"))
 
-	router.Handle("/blog", s.PageHandler("blog", ""))
+	router.Handle("/blog", s.PageHandler("blog"))
 	router.Handle("/article", s.ArticleHandler())
 
-	router.Handle("/projects", s.PageHandler("projects", ""))
+	router.Handle("/projects", s.PageHandler("projects"))
 	router.Handle("/projects/chimerical-colors/", http.StripPrefix("/projects/chimerical-colors/", http.FileServer(http.Dir(filepath.Join(s.ResourcesDir, "submodules", "chimerical-colors")))))
 	router.Handle("/projects/lambda-iota-engma/", http.StripPrefix("/projects/lambda-iota-engma/", http.FileServer(http.Dir(filepath.Join(s.ResourcesDir, "submodules", "lambda-iota-engma")))))
 
