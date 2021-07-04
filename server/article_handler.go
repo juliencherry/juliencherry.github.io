@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"path/filepath"
+	"time"
 
 	"github.com/cbroglie/mustache"
 	"github.com/yuin/goldmark"
@@ -17,8 +18,10 @@ import (
 type ArticleData struct {
 	HTML      string
 	CSS       string
+	ID        string
 	Title     string
 	Date      string
+	Datetime  time.Time
 	Location  string
 	HeroImage string
 }
@@ -30,41 +33,11 @@ func (s Server) ArticleHandler() http.HandlerFunc {
 			return
 		}
 
-		articleData := &ArticleData{}
-		jsonData, err := ioutil.ReadFile(filepath.Join(s.ResourcesDir, "submodules", "blog", "json", fmt.Sprint(r.FormValue("id"), ".json")))
+		articleData, err := Article(r.FormValue("id"), s.ResourcesDir)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
-
-		err = json.Unmarshal(jsonData, articleData)
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-			return
-		}
-
-		articleData.CSS = "blog-with-hero-image"
-		if articleData.HeroImage == "" {
-			articleData.CSS = "blog"
-		}
-
-		md := goldmark.New(
-			goldmark.WithRendererOptions(html.WithUnsafe()),
-			goldmark.WithExtensions(extension.Footnote, extension.Strikethrough, extension.Typographer),
-		)
-
-		mdData, err := ioutil.ReadFile(filepath.Join(s.ResourcesDir, "submodules", "blog", "posts", fmt.Sprint(r.FormValue("id"), ".md")))
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusNotFound)
-			return
-		}
-
-		var htmlContent bytes.Buffer
-		if err := md.Convert(mdData, &htmlContent); err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-			return
-		}
-		articleData.HTML = htmlContent.String()
 
 		htmlData, err := mustache.RenderFile(filepath.Join(s.ResourcesDir, "mustache", "article.mustache"), articleData, nil)
 		if err != nil {
@@ -74,4 +47,46 @@ func (s Server) ArticleHandler() http.HandlerFunc {
 
 		w.Write([]byte(htmlData))
 	}
+}
+
+func Article(id string, resourcesDir string) (*ArticleData, error) {
+	articleData := &ArticleData{ID: id}
+
+	jsonData, err := ioutil.ReadFile(filepath.Join(resourcesDir, "submodules", "blog", "json", fmt.Sprint(id, ".json")))
+	if err != nil {
+		return nil, err
+	}
+
+	err = json.Unmarshal(jsonData, articleData)
+	if err != nil {
+		return nil, err
+	}
+
+	articleData.CSS = "blog-with-hero-image"
+	if articleData.HeroImage == "" {
+		articleData.CSS = "blog"
+	}
+
+	articleData.Datetime, err = time.Parse("January 2, 2006", articleData.Date)
+	if err != nil {
+		return nil, err
+	}
+
+	md := goldmark.New(
+		goldmark.WithRendererOptions(html.WithUnsafe()),
+		goldmark.WithExtensions(extension.Footnote, extension.Strikethrough, extension.Typographer),
+	)
+
+	mdData, err := ioutil.ReadFile(filepath.Join(resourcesDir, "submodules", "blog", "posts", fmt.Sprint(id, ".md")))
+	if err != nil {
+		return nil, err
+	}
+
+	var htmlContent bytes.Buffer
+	if err := md.Convert(mdData, &htmlContent); err != nil {
+		return nil, err
+	}
+	articleData.HTML = htmlContent.String()
+
+	return articleData, nil
 }

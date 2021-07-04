@@ -17,7 +17,6 @@ Julien Cherry’s personal website.
 ### Blog
 
 - [ ] Create system for post permalinks
-- [ ] Load all posts chronologically on `/blog`
 
 ### Style
 

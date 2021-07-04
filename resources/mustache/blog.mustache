@@ -1,10 +1,10 @@
 {{> partials/header}}
 <main>
 	<h1>{{Title}}</h1>
-	<p>My blog’s undergoing some spring cleaning, so here’s a good subset of posts to browse:</p>
+	<p>Thoughts of mine, ranging from nearly complete to very incomplete:</p>
 	<ul>
 		{{#Posts}}
-		<li><a href="/article?id={{ID}}">{{Title}}</a></li>
+		<li>{{Date}} • <a href="/article?id={{ID}}">{{Title}} </a></li>
 		{{/Posts}}
 	</ul>
 </main>

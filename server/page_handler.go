@@ -17,14 +17,8 @@ type PageData struct {
 	Date               string
 	Photos             []Photo
 	Playlists          []Playlist
-	Posts              []Post
 	Projects           []Project
 	StatesAndProvinces []StatesAndProvinces
-}
-
-type Post struct {
-	ID    string
-	Title string
 }
 
 type Photo struct {

@@ -20,7 +20,7 @@ func (s Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	router.Handle("/photography", s.PageHandler("photography"))
 	router.Handle("/playlists", s.PageHandler("playlists"))
 
-	router.Handle("/blog", s.PageHandler("blog"))
+	router.Handle("/blog", s.BlogHandler())
 	router.Handle("/article", s.ArticleHandler())
 
 	router.Handle("/projects", s.PageHandler("projects"))

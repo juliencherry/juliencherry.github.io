@@ -2,3 +2,7 @@
 $accent-color: $green;
 
 @import "_theme";
+
+li {
+    list-style-type: none;
+}
