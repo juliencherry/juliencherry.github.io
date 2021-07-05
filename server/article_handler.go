@@ -62,10 +62,7 @@ func Article(id string, resourcesDir string) (*ArticleData, error) {
 		return nil, err
 	}
 
-	articleData.CSS = "blog-with-hero-image"
-	if articleData.HeroImage == "" {
-		articleData.CSS = "blog"
-	}
+	articleData.CSS = "blog"
 
 	articleData.Datetime, err = time.Parse("January 2, 2006", articleData.Date)
 	if err != nil {
