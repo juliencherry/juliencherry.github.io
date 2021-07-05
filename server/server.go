@@ -34,7 +34,7 @@ func (s Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	router.Handle("/img/", http.StripPrefix("/img/", http.FileServer(http.Dir(filepath.Join(s.ResourcesDir, "submodules", "blog", "img")))))
 	router.Handle("/js/", http.StripPrefix("/js/", http.FileServer(http.Dir(filepath.Join(s.ResourcesDir, "js")))))
 
-	router.Handle("/favicon.ico", FileHandler(filepath.Join(s.ResourcesDir, "favicon.ico")))
+	router.Handle("/favicon.svg", FileHandler(filepath.Join(s.ResourcesDir, "favicon.svg")))
 	router.Handle("/robots.txt", FileHandler(filepath.Join(s.ResourcesDir, "robots.txt")))
 
 	router.Handle("/github", RedirectHandler("https://github.com/juliencherry"))
