@@ -1,10 +1,7 @@
 {{> partials/header}}
-<main>
-	<h1>{{Title}}</h1>
-	<h2><time>{{{Date}}}</time>{{#Location}} • {{Location}}{{/Location}}</h2>
-	{{#HeroImage}}
-	<img src="/img/{{HeroImage}}">
-	{{/HeroImage}}
-	{{{HTML}}}
-</main>
+<h3><time>{{{Date}}}</time>{{#Location}} • {{Location}}{{/Location}}</h3>
+{{#HeroImage}}
+<img src="/img/{{HeroImage}}">
+{{/HeroImage}}
+{{{HTML}}}
 {{> partials/footer}}

@@ -1,11 +1,8 @@
 {{> partials/header}}
-<main>
-	<h1>{{Title}}</h1>
-	<p>Thoughts of mine, ranging from nearly complete to very incomplete:</p>
-	<ul>
-		{{#Posts}}
-		<li>{{Date}} • <a href="/article?id={{ID}}">{{Title}} </a></li>
-		{{/Posts}}
-	</ul>
-</main>
+<p>Thoughts of mine, ranging from nearly complete to very incomplete:</p>
+<ul>
+	{{#Posts}}
+	<li>{{Date}} • <a href="/article?id={{ID}}">{{Title}} </a></li>
+	{{/Posts}}
+</ul>
 {{> partials/footer}}

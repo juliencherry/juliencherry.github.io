@@ -1,11 +1,8 @@
 {{> partials/header}}
-<main>
-	<h1>{{Title}}</h1>
-	<p>Sometimes, when I happen to feel inspired, I make playlists. Like many people, I’d imagine.</p>
-	{{#Playlists}}
-		<h2>{{Name}}</h2>
-		<p>{{{Description}}}</p>
-		{{{Embed}}}
-	{{/Playlists}}
-</main>
+<p>Sometimes, when I happen to feel inspired, I make playlists. Like many people, I’d imagine.</p>
+{{#Playlists}}
+	<h2>{{Name}}</h2>
+	<p>{{{Description}}}</p>
+	{{{Embed}}}
+{{/Playlists}}
 {{> partials/footer}}
