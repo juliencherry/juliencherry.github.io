@@ -1,7 +1,4 @@
-@import "_colors";
-$accent-color: $green;
-
-@import "_theme";
+@import "_mixins";
 
 main {
 	padding: 0;
@@ -13,9 +10,9 @@ main {
 		background-repeat: no-repeat;
 
 		h1, h2 {
-			color: $white !important;
+			color: #FFF !important;
 			@include text-shadow(
-				0 0 8px $black,
+				0 0 8px #000,
 			);
 		}
 
