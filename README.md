@@ -29,4 +29,3 @@ Julien Cherry’s personal website.
 
 - [ ] Host photography without 500px
 - [ ] Replace Font Awesome lock icon with custom one
-- [ ] Improve Leaflet styles
