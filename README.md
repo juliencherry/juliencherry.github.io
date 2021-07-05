@@ -16,6 +16,7 @@ Julien Cherry’s personal website.
 
 ### Blog
 
+- [ ] Consolidate blog post and site page logic
 - [ ] Create system for post permalinks
 
 ### Style
