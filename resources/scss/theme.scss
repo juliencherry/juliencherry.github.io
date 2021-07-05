@@ -139,35 +139,21 @@ main {
 	*/
 }
 
-.insecure-link {
-	svg {
-		background-color: $accent-color;
+a:not([href^="https://"]):not([href^="mailto:"]):not([href^="/"]):not([href^="#"]) {
+    &:before {
+        content: "🔓";
+    }
+
+	&:hover::after {
+		content: "Careful! This link may be insecure.";
+		position: absolute;
+
+		background-color: $black;
 		color: $white;
+		font-size: 80%;
 
-		width: 1em;
-		height: 1em;
-
-		margin-right: 0.1em;
-		border-radius: 1em;
-		padding: 0.2em;
-	}
-
-	&:hover {
-		svg {
-			background-color: lighten($accent-color, 10%);
-		}
-
-		&::after {
-			content: "Careful! This link may be insecure.";
-			position: absolute;
-
-			background-color: $black;
-			color: $white;
-			font-size: 80%;
-
-			margin: 0 0.25em;
-			border-radius: 0.25em;
-			padding: 0.25em;
-		}
-	}
+		margin: 0 0.25em;
+		border-radius: 0.25em;
+		padding: 0.25em;
+    }
 }
